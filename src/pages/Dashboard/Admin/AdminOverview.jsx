@@ -145,9 +145,9 @@ const AdminOverview = () => {
                 ))}
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid lg:grid-cols-1 gap-8">
                 {/* Quick Actions */}
-                <Card className="lg:col-span-2 shadow-soft">
+                <Card className="shadow-soft">
                     <CardHeader>
                         <CardTitle className="text-lg flex items-center gap-2">
                             <ShieldCheck className="text-primary" size={20} /> Administrative Actions
@@ -194,43 +194,6 @@ const AdminOverview = () => {
                                 <ArrowUpRight size={18} />
                             </div>
                         </Link>
-                    </CardContent>
-                </Card>
-
-                {/* System Health / Notices */}
-                <Card className="shadow-soft bg-gradient-to-br from-slate-900 to-slate-800 text-white border-0">
-                    <CardHeader>
-                        <CardTitle className="flex items-center gap-2 text-white">
-                            <AlertCircle size={20} className="text-blue-400" /> System Notices
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-6">
-                        <div className="bg-white/5 p-4 rounded-lg border border-white/10">
-                            <h4 className="font-semibold text-sm text-blue-200 mb-1">Scheduled Maintenance</h4>
-                            <p className="text-xs text-slate-300">
-                                System maintenance scheduled for Sunday, 2:00 AM - 4:00 AM UTC.
-                            </p>
-                        </div>
-
-                        <div className="space-y-2">
-                            <div className="flex justify-between text-sm">
-                                <span className="text-slate-400">Server Load</span>
-                                <span className="text-emerald-400 font-bold">12%</span>
-                            </div>
-                            <div className="h-1.5 w-full bg-slate-700 rounded-full overflow-hidden">
-                                <div className="h-full bg-emerald-500 w-[12%] rounded-full"></div>
-                            </div>
-                        </div>
-
-                        <div className="space-y-2">
-                            <div className="flex justify-between text-sm">
-                                <span className="text-slate-400">Storage Usage</span>
-                                <span className="text-blue-400 font-bold">45%</span>
-                            </div>
-                            <div className="h-1.5 w-full bg-slate-700 rounded-full overflow-hidden">
-                                <div className="h-full bg-blue-500 w-[45%] rounded-full"></div>
-                            </div>
-                        </div>
                     </CardContent>
                 </Card>
             </div>
