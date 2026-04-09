@@ -121,51 +121,9 @@ const PublicSubmission = () => {
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-5 gap-6">
-                    {/* Abstract Visual / Info Panel */}
-                    <Card className="md:col-span-2 bg-slate-900/50 border-slate-700/50 backdrop-blur-md text-white shadow-xl hidden md:flex flex-col">
-                        <CardHeader>
-                            <CardTitle className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">
-                                Submit Your Research
-                            </CardTitle>
-                            <CardDescription className="text-slate-400">
-                                Join our community of scholars.
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent className="flex-1 space-y-8 relative">
-                            <div className="space-y-4">
-                                <div className="flex items-start gap-3">
-                                    <div className="h-8 w-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 border border-blue-500/30">1</div>
-                                    <div>
-                                        <h4 className="font-semibold text-slate-200">Prepare Manuscript</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Ensure your work is in PDF format and follows our citation guidelines.</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="h-8 w-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/30">2</div>
-                                    <div>
-                                        <h4 className="font-semibold text-slate-200">Submit Details</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Fill out the form with accurate author information and paper abstract.</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <div className="h-8 w-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30">3</div>
-                                    <div>
-                                        <h4 className="font-semibold text-slate-200">Peer Review</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Track your compliance status and receive feedback from expert reviewers.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="absolute bottom-0 w-full p-4 bg-slate-800/50 rounded-lg border border-slate-700/50">
-                                <p className="text-xs text-slate-300 italic">"Research is creating new knowledge."</p>
-                                <p className="text-xs text-slate-500 mt-1">- Neil Armstrong</p>
-                            </div>
-                        </CardContent>
-                    </Card>
-
+                <div className="flex justify-center">
                     {/* Submission Form */}
-                    <Card className="md:col-span-3 shadow-2xl border-0 ring-1 ring-slate-200 bg-white/95 backdrop-blur-sm">
+                    <Card className="w-full max-w-2xl shadow-2xl border-0 ring-1 ring-slate-200 bg-white/95 backdrop-blur-sm">
                         <CardHeader>
                             <CardTitle className="text-xl font-bold text-slate-900">Manuscript Details</CardTitle>
                             <CardDescription>Enter the details of your research paper below.</CardDescription>
